@@ -64,7 +64,7 @@ barcode.initializeBarcodes <- function (ctx, datasetName) {
         #
         # 1) remove all samples with <0.5 typability, so they affect less the removal of SNPs
         #
-        filteredData <- barcode.filterByTypability (barcodeData, bySnp=FALSE, minTypability=0.5)
+        filteredData <- barcode.filterByTypability (barcodeData, bySnp=FALSE, minTypability=0.25)
         #
         # 2) Refine further, using the thresholds specified
         #
